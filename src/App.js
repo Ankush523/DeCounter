@@ -10,9 +10,12 @@ import WaitTx from './components/WaitTx';
 function App() {
   return (
     <div className="App">
-      <label className='text-[20px] mt-4 text-black '> Current Wallet : {GetAccount()}</label>
+      <div className='flex flex-row w-[100vw] justify-between'>
       <br/>
-      <label className='text-[20px] mt-6 text-blue '>Balance: {GetBalance()}</label>
+      <label className='text-black font-bold font-mono text-[20px] p-3 w-[fit-content] mt-4 ml-1 '> Current Wallet : {GetAccount()}</label>
+      <label className='text-black font-bold font-mono text-[20px] p-3 w-[fit-content] mt-4 ml-1 '>Balance: {GetBalance()}</label>
+      <br/>
+      </div> 
       <br/>
       <ShowCount/>
       <IncCount/>

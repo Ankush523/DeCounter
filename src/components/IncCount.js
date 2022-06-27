@@ -16,8 +16,8 @@ const IncCount = () => {
     }
 
     return(
-        <div>
-            <button onClick={increase} >Increase</button>
+        <div className='flex flex-row justify-around p-20'>
+            <button className='font-mono text-[20px] bg-slate-100 w-[fit-content] px-4 rounded-md hover:shadow-lg' onClick={increase} >Increase</button>
             <WaitTx value={thash} />
         </div>
     )

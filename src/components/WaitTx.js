@@ -6,9 +6,9 @@ const WaitTx = ({value}) => {
         hash: `${value}`,
       })
     
-      if (isLoading) return <div>Processing…</div>
-      if (isError) return <div>Transaction error</div>
-      return <div>Transaction Completed </div>
+      if (isLoading) return <div className='font-mono font-bold'>Status : Processing…</div>
+      if (isError) return <div className='font-mono font-bold'>Status : Transaction error</div>
+      return <div className='font-mono font-bold'>Status : Transaction Completed </div>
 }
  
 export default WaitTx;

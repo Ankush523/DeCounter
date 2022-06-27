@@ -12,9 +12,9 @@ const ShowCount = () => {
     }
 
     return ( 
-        <div>
-            <label>Current Count : {count}</label>
-            <button onClick={showCount} >Refresh Count</button>
+        <div className='flex flex-row w-[100vw] p-20 justify-between'>
+            <label className='font-mono font-bold text-[20px] pl-20 w-[fit-content]'>Current Count : {count}</label>
+            <button className='bg-sky-200 rounded-md w-[fit-content] font-mono text-20px mr-20 px-4  hover:shadow-lg' onClick={showCount} >Refresh Count</button>
         </div>
      );
 }
