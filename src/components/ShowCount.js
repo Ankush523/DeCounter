@@ -5,6 +5,10 @@ const ShowCount = () => {
     const[count,setCount]=useState(null);
     const contract = GetContract();
 
+    useEffect(()=>{
+        showCount();
+    })
+
     const showCount=async()=>{
         var temp = await contract.getCount();
         var cnt = temp.toString();
